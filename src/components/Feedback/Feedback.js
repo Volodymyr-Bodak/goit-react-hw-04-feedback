@@ -32,11 +32,8 @@ const Feedback = () => {
   };
 
   useEffect(() => {
-    const totalFeedback = countTotalFeedback();
-    const positivePercentage = countPositiveFeedbackPercentage();
-    // You can also use these values in other calculations or side effects if needed.
-    // For example, you might want to update a backend with these values.
-  }, [feedback]); // The effect will be triggered whenever the 'feedback' state updates.
+    
+  }, [feedback]); 
 
   const { good, neutral, bad } = feedback;
   const total = countTotalFeedback();

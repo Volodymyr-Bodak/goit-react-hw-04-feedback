@@ -31,9 +31,6 @@ const Feedback = () => {
     return Math.round((feedback.good / totalFeedback) * 100);
   };
 
-  useEffect(() => {
-    
-  }, [feedback]); 
 
   const { good, neutral, bad } = feedback;
   const total = countTotalFeedback();
